@@ -1,0 +1,285 @@
+/* body{
+    background-color: #0b010e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+background-color: white;
+}
+
+label.logo{
+    color:white;
+    font-size:35px;
+    line-height :80px;
+    padding: 0 100px;
+    font-weight:bold;
+}
+
+nav {
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,a:hover{
+    background:blue;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color : white;
+    float :right;
+    line-height :80px;
+    margin-right:40px;
+    cursor :pointer;
+    display:none;
+}
+#check{
+    display:none;
+}
+@media(max-width :952px){
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width :858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width :100%;
+        height :100vh;
+        background:#2c3e50;
+        top:80px;
+        left:0;
+        text-align:center;
+    }
+    nav ul li{
+        display:block;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+
+    }
+    #check:checked ~ ul {
+        left :0;
+    }
+}
+section{
+    background: url(Images/header.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 90px);
+
+}
+
+.banner-text{
+    position:absolute;
+    top:50%;
+    color:rgb(154, 54, 34);
+    padding:20px;
+
+}
+.banner-text h4{
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom:5px;
+
+}
+.banner-text p{
+    font-size: Medium;
+     color:#2c3e50;
+    font-weight: bold;
+    margin-bottom:5px;
+
+}
+.div_1 p{
+    color: #2c3e50;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+section {
+    background: url(Images/header.jpg) no-repeat;
+    background-size: auto;
+    
+    height: calc(200vh - 90px);
+
+}
+.offscreen{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(7, 40, 97);
+    text-align: center;
+    justify-content: center;
+
+}
+.hours h2{
+    text-align: center;
+    color:rgb(149, 5, 19);
+    background-color: rgb(151, 112, 146);
+}
+
+.hours h1{
+    text-align: center;
+    color:rgb(16, 69, 215);
+    background-color: goldenrod;
+}
+
+/* Menu Item Styles */
+
+.menu-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .menu-item h3 {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  .menu-item h3,p{
+    text-align: center;
+    justify-content: space-around;
+    color: rgb(8, 122, 122);
+  }
+  
+  .menu-item a {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .menu-item a:hover {
+    background-color: #23527c;
+  }
+
+   .banner_card {
+    background: url(Images/home.jpg) no-repeat;
+    background-size: cover;
+    height: calc(150vh - 400px);
+
+}
+.search-form {
+     
+    width: 600%;
+    display: flex;
+  flex-grow: 1; /* or a specific width in pixels, e.g. 500px */
+  }
+
+  nav button{
+     background-color: #337ab7;
+     color: #fff;
+     text-transform: uppercase;
+     border-radius: 5px;
+  }
+  /* Add this to your CSS file */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #c7e7e8;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: larger;
+    color: black;
+  }
+  .testimonial {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 250px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.testimonial h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #666;
+}
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Add the following code to minimize the distance */
+    margin: 0 10px;
+  }
